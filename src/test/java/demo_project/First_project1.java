@@ -41,7 +41,7 @@ public class First_project1 {
 	@Test(priority = 6)
 	
 	public void newcustomer() throws IOException  {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 		driver.findElement(By.xpath("//a[text()=\"New Customer\"]")).click();
 		driver.findElement(By.xpath("//input[@name=\"name\"]")).sendKeys("balraj");
