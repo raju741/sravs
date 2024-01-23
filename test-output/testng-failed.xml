@@ -6,7 +6,21 @@
       <class name="demo_project.First_project1">
         <methods>
           <include name="newcustomer"/>
+          <include name="logout"/>
+          <include name="deposit"/>
+          <include name="newcustamer1"/>
+          <include name="changepassword1"/>
+          <include name="new_account"/>
+          <include name="delete_custamer"/>
+          <include name="edit_customer"/>
+          <include name="changepassword"/>
+          <include name="newaccount"/>
+          <include name="ministatement"/>
+          <include name="ministatement1"/>
+          <include name="delete_customer"/>
           <include name="browser"/>
+          <include name="deposit1"/>
+          <include name="editcustamer1"/>
         </methods>
       </class> <!-- demo_project.First_project1 -->
     </classes>

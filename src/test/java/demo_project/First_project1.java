@@ -23,13 +23,13 @@ public class First_project1 {
 	WebDriver driver = new ChromeDriver();
 
 	@BeforeMethod
-	@Parameters({"user","pass"})
+	@Parameters({"user","pass"}) 
 	public void browser(String name,String password) {
 
 		driver.get("https://www.demo.guru99.com/V4/");
 	
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 
 		driver.findElement(By.xpath("//input[@name=\"uid\"]")).sendKeys(name);
@@ -41,7 +41,7 @@ public class First_project1 {
 	@Test(priority = 6)
 	
 	public void newcustomer() throws IOException  {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.findElement(By.xpath("//a[text()=\"New Customer\"]")).click();
 		driver.findElement(By.xpath("//input[@name=\"name\"]")).sendKeys("balraj");
