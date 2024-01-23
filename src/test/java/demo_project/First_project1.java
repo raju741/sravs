@@ -29,7 +29,7 @@ public class First_project1 {
 		driver.get("https://www.demo.guru99.com/V4/");
 	
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 
 		driver.findElement(By.xpath("//input[@name=\"uid\"]")).sendKeys(name);
